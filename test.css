@@ -137,8 +137,32 @@ header >div .spot > li {float: left;}
     padding-left: 20px;
     
 }
+.maininfo{
+    position: relative;width: 1090px; margin: 0 auto;
+    
+}
+div .maintxt{
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    top: 1000px;
+    left:-5%;
 
+}
 
+div .maininfo1{
+    font-size: 15px;
+    color:#fff;
+    position: absolute;
+    top:1150px;
+    left: -5%;
+}
+div .eqe_ex_first{
+    width: 500px;
+    position: absolute;
+    top:1250px;
+    left: -5%;
+    }
 
 /*footer{
     height: 60px;
