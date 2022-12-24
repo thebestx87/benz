@@ -1,5 +1,7 @@
 body{
     background-color:black;
+    width: 100%;
+    height: 2000px;
 }
 
 header{
@@ -146,24 +148,61 @@ div .maintxt{
     font-size: 50px;
     position: absolute;
     top: 1000px;
-    left:-5%;
+    left:-65px;
 
 }
 
 div .maininfo1{
+    width: 1000px;
+    height: 400px;
+    background-color: black;
     font-size: 15px;
     color:#fff;
     position: absolute;
     top:1150px;
     left: -5%;
+    
 }
 div .eqe_ex_first{
-    width: 500px;
+    width: 450px;
     position: absolute;
-    top:1250px;
+    top:1300px;
     left: -5%;
-    }
+       }
+.eqe_ex_first:hover{
+    position: absolute;
+    top: 1350px;
+    left: 40px;
+    transform: scale(1.5);
+    transition: .5;
+}
 
+
+.maintxt {
+        display: inline-block;
+              padding: 10px;
+        animation: fadein 3s;
+        -moz-animation: fadein 3s; /* Firefox */
+        -webkit-animation: fadein 3s; /* Safari and Chrome */
+        -o-animation: fadein 3s; /* Opera */
+      }
+     @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translateZ(0);
+            }
+        }
+     
+        .maintxt{
+            position: relative;
+            animation: fadeInUp 1s;
+        }
+
+     
 /*footer{
     height: 60px;
     background-color:#181818;
