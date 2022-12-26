@@ -174,27 +174,21 @@ div .eqe_ex_first{
 
 .maintxt {
         display: inline-block;
+        opacity: 0;
         padding: 10px;
-        animation: fadein 3s;
+        animation: fadein 5s;
         -moz-animation: fadein 3s; /* Firefox */
         -webkit-animation: fadein 3s; /* Safari and Chrome */
         -o-animation: fadein 3s; /* Opera */
       }
-     @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translate3d(0, 100%, 0);
-            }
-            to {
-                opacity: 1;
-                transform: translateZ(0);
-            }
-        }
-     
-        .maintxt{
-            position: relative;
-            animation: fadeInUp 1s;
-        }
+      @keyframes fadein {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      } 
 
      
 /*footer{
