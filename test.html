@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <title>Mercedes-Benz EQE</title>
 </head>
 <body>
@@ -88,8 +91,8 @@
 </div>
 </div>
 <div class="maininfo">
-   <h1 class="maintxt">THIS IS FOR ALL SENSES<br>
-   The ALL-Electric EQE.</h1><br><br><br><br><br><br><br><br><br>
+    <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-center"><h1>THIS IS FOR ALL SENSES<br>
+   The ALL-Electric EQE.</h1></div><br><br><br><br><br><br><br><br><br>
 <p class="maininfo1">유려한 곡선의 원보우(one-bow) 디자인이 돋보이는 The ALL-Electric EQE는 <br>
     감각적인바디와 최첨단 엔지니어링 기술의 결합으로 최고의 드라이빙 경험을 제공합니다.<br>
     역동적이면서 안전성과 편안함을 동시에 충족시키는 공간과 미래 지향적 디자인의 디지털 라이트는<br> 지금껏 경험하지 못한 새로운 감각으로 일렉스릭 모빌리티를 더욱 새롭고 럭셔리하게 느껴지게 합니다.<br>
@@ -99,6 +102,8 @@
 
 
 </div>
-<script src="main.js"></script>   
+<script> 
+    AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+</script>
 </body>
 </html>
