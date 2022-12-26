@@ -169,18 +169,12 @@ div .eqe_ex_first{
     top:1300px;
     left: -5%;
        }
-.eqe_ex_first:hover{
-    position: absolute;
-    top: 1350px;
-    left: 40px;
-    transform: scale(1.5);
-    transition: .5;
-}
+
 
 
 .maintxt {
         display: inline-block;
-              padding: 10px;
+        padding: 10px;
         animation: fadein 3s;
         -moz-animation: fadein 3s; /* Firefox */
         -webkit-animation: fadein 3s; /* Safari and Chrome */

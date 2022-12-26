@@ -17,7 +17,7 @@ header >div .spot > li {float: left;}
 section{
     height: 800px;
     
-    background:url(/image/mainimg2.jpg);
+    background:url(image/mainimg2.jpg);
     background-repeat: no-repeat;
     }
 
