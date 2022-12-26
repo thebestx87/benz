@@ -30,7 +30,18 @@
         </div>
     </header>
 
-
+    <div class="slider">
+        <div class="slide" style="background-image:url(image/mainimg2.jpg)"></div>
+        <div class="slide" style="background-image:url(image/eqe/eqe_ex_img_front1.jpg)"></div>
+        <div class="slide" style="background-image:url(image/eqe/eqe_ex_img_white.jpg)"></div>
+    
+        <a class="prev" onclick="button_click(-1)">&#10094</a>
+        <a class="next" onclick="button_click(1)">&#10095</a>
+          </div>
+          
+    </div>
+    
+    
 
 
 
@@ -42,28 +53,6 @@
 </div>
 
 
-    <div class="slide-wrap">
-<!--------------인디케이터-->
-<input type="radio" name="dot" id="btn1" checked>
-<label for="btn1" id="in1" class="wide"></label>
-
-<input type="radio" name="dot" id="btn2">
-<label for="btn2" id="in2" class="wide"></label>
-
-<input type="radio" name="dot" id="btn3">
-<label for="btn3" id="in3" class="wide"></label>
-
-<input type="radio" name="dot" id="btn4">
-<label for="btn4" id="in4" class="wide"></label>
-
-<!-----------------------슬라이드이미지-->
-<ul class="slide">
-    <li class="slide-img1"></li>
-    <li class="slide-img2"></li>
-    <li class="slide-img3"></li>
-    <li class="slide-img4"></li>
-</ul>
-   </div>
 
 
 <div class="infomation">
@@ -102,6 +91,7 @@
 
 
 </div>
+<script src="slider.js"></script>   
 <script> 
     AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
 </script>
