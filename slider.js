@@ -15,3 +15,4 @@ function showSlide(num){
     slides[i].style.display="none";
   }slides[currSlide -1].style.display="block";
 }
+

@@ -33,81 +33,67 @@ header >div .spot > li {float: left;}
     top:150px;
     left: 350px;
 }
-.slide-wrap{
-    position: absolute;
-    height: 600px;
-    width: 1200px;
-   top:50px;
-   left: 350px;
-    
-}
-.slide-wrap ul li{
+
+
+.slider {
+    width: 1000px;
     height: 550px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 150px;; left: 0;
-    width: 100%;
-}
-/*인디케이터*/
-.slide-wrap input,
-.slide-wrap label{
     position: relative;
-    top:710px;
+    top:100px;
+    left: 24%;
     
-}
-/*인디케이더 레이블 스타일링*/
-.slide-wrap label{
-    width: 20px; height: 20px;
-    background-color: #ddd;
-    display: inline-block;
-    border-radius: 10px;
-    align-content: center;
-    cursor: pointer;
-  
-}
-/*라디오 버튼숨기기*/
-.slide-wrap input[type="radio"]{
+  }
+  .slide {
+    width: 1000px;
+   height: 550px;
+    background-size: cover;
+    border-radius: 3px;
+    animation: fade 1.5s;
     display: none;
+    position: absolute;
+    
 
-}
-/*슬라이드 이미지 숨기기*/
-.slide-wrap ul li {display: none;}
-/*인디케이터선택시 이미지 보이기*/
-#btn1:checked ~ .slide li:nth-child(1){display: block;}
-#btn2:checked ~ .slide li:nth-child(2){display: block;}
-#btn3:checked ~ .slide li:nth-child(3){display: block;}
-#btn4:checked ~ .slide li:nth-child(4){display: block;}
-/*인디케이터 label 스타일링*/
-#btn1:checked ~ #in1{background-color:#fff;}
-#btn2:checked ~ #in2{background-color:#fff;}
-#btn3:checked ~ #in3{background-color:#fff;}
-#btn4:checked ~ #in4{background-color:#fff;}
+  }
+  .slide2 {
+    width: 1000px;
+   height: 550px;
+    background-size: cover;
+    border-radius: 3px;
+    animation: fade 1.5s;
+    display: none;
+    position: absolute;
+    bottom: 200px;
+    
 
-/*인디케이터 템플링 .(wide)*/
-#btn1:checked ~ #in1.wide{ width: 40px;}
-#btn2:checked ~ #in2.wide{ width: 40px;}
-#btn3:checked ~ #in3.wide{ width: 40px;}
-#btn4:checked ~ #in4.wide{ width: 40px;}
-
-/*모션*/
-.slide-wrap label{
-    transition: all 0.6s;
-}
-
-
-
-.slide-img1 {background-image: url(https://www.mercedes-benz.co.kr/passengercars/content-pool/marketing-pool/product-page-stages/eqe-saloon-v295-stage-design-and-equipment/_jcr_content/par/stageelement.MQ6.0.stage.20220930171244.jpeg
-    );
-}
-
-.slide-img2{background-image: url(https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/models/eqe/saloon-v295/explore/design-highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile/image.MQ6.0.20220930072910.jpeg);}
-
-.slide-img3 {background-image: url(https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/models/eqe/saloon-v295/explore/design-highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile_1649813152/image.MQ6.0.20220930122413.jpeg)
-;}
-
-.slide-img4 {background-image: url(https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/models/eqe/saloon-v295/explore/design-highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile_161405432/image.MQ6.0.20220930150912.jpeg;)}
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: rgb(248, 248, 248);
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 5px;
+  }
+  .next {
+    right: 0;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(190, 190, 190, 0.5);
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 .infomation{
     display: flex;
@@ -155,7 +141,7 @@ div .maintxt{
 div .maininfo1{
     position: absolute;
     left: 20%;
-    top:1150px;
+    top: 500px;
     font-size: 15px;
     color:#fff;
     text-align: center;
@@ -173,7 +159,6 @@ div .eqe_ex_first{
       }
    
       .item {
-        z-index: 10;
         position: absolute;
         top: 870px;
         left: 0;
@@ -187,67 +172,6 @@ div .eqe_ex_first{
       }
 
 
-
-      .slider {
-        width: 1000px;
-        height: 550px;
-        position: relative;
-        top:100px;
-        left: 24%;
-        
-      }
-      .slide {
-        width: 1000px;
-       height: 550px;
-        background-size: cover;
-        border-radius: 3px;
-        animation: fade 1.5s;
-        display: none;
-        position: absolute;
-        
-    
-      }
-      .slide2 {
-        width: 1000px;
-       height: 550px;
-        background-size: cover;
-        border-radius: 3px;
-        animation: fade 1.5s;
-        display: none;
-        position: absolute;
-        bottom: 200px;
-        
-    
-      }
-      .prev,
-      .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        padding: 16px;
-        color: rgb(248, 248, 248);
-        font-size: 2rem;
-        transition: 0.6s ease;
-        border-radius: 5px;
-      }
-      .next {
-        right: 0;
-      }
-      .prev:hover,
-      .next:hover {
-        background-color: rgba(190, 190, 190, 0.5);
-      }
-      
-      @keyframes fade {
-        from {
-          opacity: 0.4;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      
 
     /*footer{
     height: 60px;
