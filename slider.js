@@ -16,3 +16,4 @@ function showSlide(num){
   }slides[currSlide -1].style.display="block";
 }
 
+  

@@ -1,3 +1,5 @@
+document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
+
 const introText = document.querySelectorAll("span");
 
 window.onload = () => {
