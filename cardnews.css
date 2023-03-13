@@ -6,16 +6,15 @@
   }*/
 
   body{height:10000px;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #434343, #000000);}
+    ;  /* Chrome 10-25, Safari 5.1-6 */
+  }
   /*더 알아보기 슬라이더*/
   .moreviwe{
-    color: #fff;
+    color:#000;
     font-size: 40px;
     position: absolute;
-    top: 950px;
-      left: 300px;
+    top:980px;
+      left: 250px;
   
   }
   .band {
@@ -32,7 +31,7 @@
 
     position: absolute;
     top:1350px;
-    left: 50%;
+    left:47%;
     transform: translate(-50%, -50%);
     font-size: 20px;
 
@@ -42,6 +41,7 @@
   @media only screen and (min-width: 500px) {
     .band {
       grid-template-columns: 1fr 1fr;
+      
     }  
     .item-1 {
     grid-column: 1/ span 2;
@@ -60,7 +60,8 @@
   /* card */
   
   .card {
-    height: 615px;
+    height: 650px;
+    width: 350px;
     min-height: 60%;
     background: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -95,12 +96,13 @@
   
   .card p { 
     flex: 1; /* make p grow to fill available space*/
-    line-height: 1.4;
+line-height: 1.4;
+    font-size: 14px;
   }
   
   /* typography */
   h1 {
-    font-size: 20px;
+    font-size: 25px;
     margin: 0;
     color: #333;
   }
@@ -114,7 +116,8 @@
     margin: 2em 0 0 0;
   }
 
-  .downitems{
+  /* .downitems{
+    
     position: relative;
     top:800px;
     left:180px;
@@ -122,4 +125,4 @@
     height:500px;
     background-color: #fff;
     align-items: center;
-  }
+  } */
